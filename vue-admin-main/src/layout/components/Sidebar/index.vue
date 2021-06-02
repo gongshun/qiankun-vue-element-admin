@@ -39,12 +39,18 @@ export default {
           meta: { title: '子应用的 dashboard', icon: 'dashboard' }
         },
         {
-          path: '/layout/vue-admin-child/form/index',
-          meta: { title: '子应用的 form', icon: 'form' }
-        },
-        {
-          path: '/layout/vue-admin-child/example/table',
-          meta: { title: '子应用的 table', icon: 'table' }
+          path: '',
+          meta: { title: '子应用', icon: 'form' },
+          children: [
+            {
+              path: '/layout/vue-admin-child/form/index',
+              meta: { title: '子应用的 form', icon: 'form' }
+            },
+            {
+              path: '/layout/vue-admin-child/example/table',
+              meta: { title: '子应用的 table', icon: 'table' }
+            }
+          ]
         }
       ]);
     },
